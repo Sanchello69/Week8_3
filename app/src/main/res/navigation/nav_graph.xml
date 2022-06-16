@@ -11,10 +11,17 @@
         <action
             android:id="@+id/action_mainFragment_to_favoriteFragment"
             app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.vas.feature_favorite_screen.presentation.FavoriteFragment"
         android:label="FavoriteFragment" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.vas.feature_about_app_screen.AboutAppFragment"
+        android:label="AboutAppFragment" />
 
 </navigation>

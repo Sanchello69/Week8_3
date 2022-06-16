@@ -83,6 +83,7 @@ class MainFragment : Fragment() {
     private fun setupUI() {
         initCatViewPager()
         initFavoriteButton()
+        initInfoButton()
     }
 
     private fun setupViewModel() {
@@ -115,6 +116,12 @@ class MainFragment : Fragment() {
     private fun initFavoriteButton() {
         binding?.starsImageView?.setOnClickListener {
             navigate(mainNavCommandProvider.toFavorite)
+        }
+    }
+
+    private fun initInfoButton() {
+        binding?.infoImageView?.setOnClickListener {
+            navigate(mainNavCommandProvider.toAboutApp)
         }
     }
 

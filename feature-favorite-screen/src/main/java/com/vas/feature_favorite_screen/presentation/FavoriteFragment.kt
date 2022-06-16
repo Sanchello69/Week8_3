@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.vas.core.utils.Result
 import com.vas.feature_favorite_screen.databinding.FragmentFavoriteBinding
 import com.vas.feature_favorite_screen.di.FavoriteComponentViewModel
+import com.vas.navigation.navigate
 import javax.inject.Inject
 
 class FavoriteFragment : Fragment() {
@@ -77,6 +78,13 @@ class FavoriteFragment : Fragment() {
 
     private fun setupUI() {
         initFavoriteRecyclerView()
+        initBackImageView()
+    }
+
+    private fun initBackImageView() {
+        binding?.imageViewBack?.setOnClickListener {
+            navigate()
+        }
     }
 
     private fun initFavoriteRecyclerView() {

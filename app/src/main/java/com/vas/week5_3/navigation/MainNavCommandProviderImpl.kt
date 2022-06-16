@@ -8,4 +8,7 @@ import javax.inject.Inject
 class MainNavCommandProviderImpl @Inject constructor() : MainNavCommandProvider {
     override val toFavorite: NavCommand =
         NavCommand(R.id.action_mainFragment_to_favoriteFragment)
+
+    override val toAboutApp: NavCommand =
+        NavCommand(R.id.action_mainFragment_to_aboutAppFragment)
 }

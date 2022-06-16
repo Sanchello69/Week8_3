@@ -4,5 +4,6 @@ import com.vas.navigation.NavCommand
 
 interface MainNavCommandProvider {
     val toFavorite: NavCommand
+    val toAboutApp: NavCommand
 }
 

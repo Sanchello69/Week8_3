@@ -67,5 +67,6 @@ dependencies {
 
     implementation project(path: ':feature-main-screen')
     implementation project(path: ':feature-favorite-screen')
+    implementation project(path: ':feature-about-app-screen')
     implementation project(path: ':navigation')
 }
